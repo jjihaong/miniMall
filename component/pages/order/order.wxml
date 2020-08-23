@@ -1,0 +1,26 @@
+<!--component/pages/order/order.wxml-->
+<view class="container">
+  <view class="main">
+    <block wx:if="{{!address}}">
+      <navigator url="" class="address flex" role="navigator">
+        <text class="address-info">添加收货地址</text>
+      </navigator>
+    </block>
+    <view class="goods">
+      <view class="goods-item flex" wx:for="{{goods}}" wx:key="index">
+        <view class="goods-prev flex">
+          <image src="{{item.image}}"></image>
+        </view>
+        <view class="goods-info flex">
+          <text>{{item.title}}</text>
+          <text>${{item.price}}</text>
+          <text>{{item.num}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="buyBar flex">
+      <text class="price">付款合计：￥{{totalPrice}}</text>
+      <text class="btn" bindtap="pay">去付款</text>
+    </view>
+  </view>
+</view>

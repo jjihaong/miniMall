@@ -1,0 +1,66 @@
+/* component/pages/order/order.wxss */
+.flex{
+  display: flex;
+  display: -webkit-flex;
+}
+.main{
+  width: 100%;
+  padding-bottom: 104rpx;
+}
+.address{
+  width: 100%;
+  height: 128rpx;
+  justify-content: center;
+}
+.address-info{
+  width: 100%;
+  height: 106rpx;
+  line-height: 106rpx;
+  font-size: 42rpx;
+  text-align: center;
+  color: #adadad;
+  border-bottom: 12rpx solid #ededed;
+}
+.goods{
+  width: 100%;
+}
+.goods-item{
+  border-bottom: 1px solid #ededed;
+}
+.goods-prev{
+  width: 180rpx;
+  height: 180rpx;
+  margin: 16rpx;
+}
+.goods-prev>image{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.goods-info{
+  flex:1;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 32rpx;
+  padding: 16rpx;
+}
+.buyBar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 104rpx;
+  border-top: 1px solid #ededed;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 32rpx;
+  padding: 0 24rpx;
+}
+.buyBar>.btn{
+  width: 240rpx;
+  height: 100%;
+  line-height: 104rpx;
+  text-align: center;
+  background-color: #AB956D;
+  color: #FFF;
+}

@@ -1,0 +1,28 @@
+<!--pages/cart/cart.wxml-->
+<view class="container">
+  <view class="selected-content">
+    <view class="selected flex" wx:for="{{carts}}" wx:key="index">
+      <view class="selected-prev flex">
+        <image src="{{item.image}}"></image>
+      </view>
+      <view class="selected-info flex">
+        <view class="selected-detail flex">
+          <text class="selected-name">{{item.title}}</text>
+          <text class="selected-name">${{item.price}}</text>
+        </view>
+        <view class="selected-count flex">
+          <text class="selected-count-down" bindtap="countDown" data-index="{{index}}">-</text>
+          <text class="selected-num">{{item.num}}</text>
+          <text class="selected-count-add" bindtap="countAdd" data-index="{{index}}">+</text>
+          <text class="selected-delete" bindtap="delete" data-index="{{index}}">×</text>
+        </view>
+      </view>
+    </view>
+    <view class="selected-footer flex">
+      <text class="selected-price">${{total}}</text>
+      <view class="selected-pay">
+        <navigator url="../../component/pages/order/order"><image src="/images/icon3.png"></image></navigator>
+      </view>
+    </view>
+  </view>
+</view>

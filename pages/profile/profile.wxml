@@ -1,0 +1,10 @@
+<!-- pages/profile/profile.wxml -->
+<view class="container">
+  <view class="userinfo flex">
+    <view class="user-p flex">
+      <image src="{{user.avatarUrl}}"></image>
+      <text>{{user.nickName}}</text>
+    </view>
+   <text>关于我们</text>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+/* pages/profile/profile.wxss */
+.userinfo{
+  width: 100%;
+  height: 160rpx;
+  background-color: #AB956D;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 32rpx;
+}
+.user-p{
+  align-items: center;
+  justify-content: center;
+}
+.user-p>image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 16rpx;
+}
+.user-p>text{
+  font-size: 32rpx;
+}
+.userinfo>text{
+  font-size: 32rpx;
+}

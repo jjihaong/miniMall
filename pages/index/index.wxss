@@ -1,0 +1,113 @@
+/**index.wxss**/
+page{
+  height: 100%;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.swiper{
+  width: 100%;
+  height: auto;
+  background-color: aliceblue;
+}
+.swiper>swiper{
+  height: 480rpx;
+}
+.swiper-img{
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down
+}
+.search-area{
+  width: 100%;
+}
+.search-text{
+  position: relative;
+  width: 90%;
+  height: 64rpx;
+  line-height: 64rpx;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  margin: 12rpx auto;
+}
+.search-text>icon{
+  position: relative;
+  top: 22%;
+  left: 0;
+  margin-top: 0;
+}
+.theme{
+  width: 100%;
+}
+.theme-top{
+  width: 100%;
+  text-align: center;
+  margin: 20rpx auto;
+}
+.theme-main{
+  width: 50%;
+  display: inline-block;
+}
+.theme-main>navigator{
+  width: 100%;
+  height: 375rpx;
+}
+.theme-main image{
+  width: 100%;
+  height: 100%;
+}
+.theme-bottom{
+  width: 100%;
+}
+.theme-bottom image{
+  width: 100%;
+}
+.news{
+  width: 100%;
+}
+.news-top{
+  width: 100%;
+  text-align: center;
+  margin: 20rpx auto;
+}
+.news-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  box-sizing: border-box; 
+  padding: 0 40rpx;
+}
+.news-main{
+  width: 325rpx;
+  height: 325rpx;
+  margin-bottom: 24rpx;
+}
+.news-main>navigator{
+  width: 100%;
+  height: 100%;
+}
+.news-main image{
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,6 @@
+<!--pages/home/home.wxml-->
+<view class="main">
+  <view class="power flex">
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">开始体验</button>
+  </view>
+</view>

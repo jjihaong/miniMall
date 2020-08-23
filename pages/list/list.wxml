@@ -1,0 +1,24 @@
+<!--pages/list/list.wxml-->
+<view class="container">
+  <view class="list-left">
+    <block>
+      <view wx:for="{{lists}}" wx:key="id" data-id="{{item.id}}" data-index="{{index}}" class="list-item {{curIndex==index?'on':''}}" bindtap="switchItem">{{item.name}}</view>
+    </block>
+  </view>
+  <view class="list-right">
+    <block>
+      <scroll-view class="list-main" scroll-into-view="{{toView}}" scroll-y="{{isScroll}}" refresher-enabled="true">
+        <block wx:for="{{listMain}}" wx:for-index wx:key="idx">
+          <view id="{{item.id}}" class="list-main">
+            <view class="prev">
+              <image src="{{item.prev}}"></image>
+            </view>
+            <view class="info">
+              <text>{{item.info}}</text>
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+    </block>
+  </view>
+</view>

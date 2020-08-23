@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="swiper">
+    <swiper autoplay="{{autoplay}}" interval="{{interval}}">
+      <swiper-item wx:for="{{swiperImg}}" wx:key="*this">
+        <image src="{{item}}" class="swiper-img"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="search-area">
+    <navigator url="../search/search">
+      <view class="search-text">
+        <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>搜索
+      </view>
+    </navigator>
+  </view>
+  <view class="theme">
+    <view class="theme-top">
+      精选
+    </view>
+    <view class="theme-main">
+      <navigator url="../list/list">
+        <image src="/images/s1.png"></image>
+      </navigator>
+    </view>  
+    <view class="theme-main">
+      <navigator url="../list/list">
+        <image src="/images/s2.png"></image>
+      </navigator>
+    </view> 
+    <view class="theme-bottom">
+      <navigator url="../list/list">
+        <image src="/images/s3.png"></image>
+      </navigator>
+    </view> 
+  </view>
+  <view class="news">
+    <view class="news-top">
+      <text>今日新品</text>
+    </view>
+    <view class="news-box">
+      <view class="news-main" wx:for="{{newsList}}" wx:key="id">
+        <navigator url="">
+          <image src="{{item.prev}}"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class="usermotto" style="display:none">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <mp-dialog title="test" show="{{showDiolog}}" bindbuttontap="tapDialogButton" buttons="{{[{text: '取消'}, {text: '确认'}]}}">
+    <view>test content</view>
+</mp-dialog>
+</view>
