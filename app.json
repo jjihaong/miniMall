@@ -6,6 +6,7 @@
     "pages/cart/cart",
     "pages/profile/profile",
     "pages/logs/logs"
+    
   ],
   "subPackages":[
     {
